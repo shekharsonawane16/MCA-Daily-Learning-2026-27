@@ -118,3 +118,100 @@ The API documentation defines the exact behavior of each endpoint.
 8. Explain status codes 200, 201, 400, 401, 404, and 500.
 9. Explain authentication and authorization.
 10. Give an example of CRUD operations in a student management system.
+
+
+## 10. Practice Questions with Answers
+
+### Q1. What is Client–Server Architecture?
+
+**Answer:** Client–Server Architecture is a model in which a client sends a request to a server, and the server processes the request and returns a response.
+
+**Example:** A web browser requests a webpage from a web server.
+
+### Q2. What is an API, and why is it useful?
+
+**Answer:** API stands for Application Programming Interface. It allows different software applications to communicate with each other.
+
+**Example:** A weather application uses a weather API to fetch current weather information.
+
+### Q3. Explain REST, SOAP, GraphQL, and WebSocket APIs.
+
+**Answer:**
+
+- **REST:** Uses HTTP methods such as GET and POST to access resources.
+- **SOAP:** A messaging protocol that commonly uses XML.
+- **GraphQL:** Allows clients to request specific fields of data.
+- **WebSocket:** Supports two-way communication over a persistent connection, such as in chat applications.
+
+### Q4. Differentiate between GET and POST.
+
+**Answer:**
+
+| GET | POST |
+|---|---|
+| Used mainly to retrieve data. | Used to submit data or create resources. |
+| Parameters may be included in the URL. | Data is commonly sent in the request body. |
+| Example: `GET /students` | Example: `POST /students` |
+
+### Q5. Differentiate between PUT and PATCH.
+
+**Answer:**
+
+| PUT | PATCH |
+|---|---|
+| Commonly replaces the complete resource representation. | Updates selected parts of a resource. |
+| Example: Replace a student's complete record. | Example: Update only a student's email. |
+| Endpoint: `PUT /students/101` | Endpoint: `PATCH /students/101` |
+
+### Q6. What is an endpoint?
+
+**Answer:** An endpoint is a URL path through which a client accesses a particular resource or operation in an API.
+
+**Example:** `/students/101` can represent the student whose ID is 101.
+
+### Q7. What is JSON?
+
+**Answer:** JSON stands for JavaScript Object Notation. It is a lightweight text format used to exchange structured data between applications.
+
+**Example:**
+
+```json
+{
+  "id": 101,
+  "name": "Rahul",
+  "course": "MCA"
+}
+```
+
+### Q8. Explain HTTP status codes 200, 201, 400, 401, 404, and 500.
+
+**Answer:**
+
+- **200 OK:** The request was successful.
+- **201 Created:** A new resource was created successfully.
+- **400 Bad Request:** The request contains invalid information.
+- **401 Unauthorized:** Authentication is missing or invalid.
+- **404 Not Found:** The requested resource was not found.
+- **500 Internal Server Error:** The server encountered an unexpected error.
+
+### Q9. Explain Authentication and Authorization.
+
+**Answer:**
+
+- **Authentication:** Verifies who the user is.
+- **Authorization:** Determines what the user is allowed to access or do.
+
+**Example:** Logging in with a password is authentication. Checking whether the user can delete a student record is authorization.
+
+### Q10. Give an example of CRUD operations in a Student Management System.
+
+**Answer:** CRUD stands for Create, Read, Update, and Delete.
+
+| Operation | HTTP Method | Example Endpoint |
+|---|---|---|
+| Create a student | POST | `/students` |
+| Read student details | GET | `/students/101` |
+| Update student details | PATCH | `/students/101` |
+| Delete a student | DELETE | `/students/101` |
+
+**Conclusion:** Client–Server Architecture and APIs enable applications to communicate and exchange data. Understanding HTTP methods, status codes, endpoints, JSON, authentication, and CRUD operations is essential for developing web applications.
