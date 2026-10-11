@@ -1,9 +1,11 @@
-def swapNumbers(a: int, b: int) -> list[int]:
+def swapNumbers(a, b):
     a, b = b, a
-    return [a, b]
+    return a, b
+
 print("Swapping two numbers:")
 a = 5
 b = 10
+
 print(f"Before swapping: a = {a}, b = {b}")
 a, b = swapNumbers(a, b)
 print(f"After swapping: a = {a}, b = {b}")
