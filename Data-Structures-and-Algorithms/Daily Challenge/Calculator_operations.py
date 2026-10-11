@@ -18,3 +18,11 @@ def calculate(a: int, b: int, op: str) -> Union[int, float, str]:
 
 print(calculate(10, 5, "+"))  # Output: 15
 print(calculate(10, 5, "-"))  # Output: 5
+print(calculate(10, 5, "*"))  # Output: 50
+print(calculate(10, 5, "/"))  # Output: 2.0
+print(calculate(10, 0, "/"))  # Output: Division by zero
+print(calculate(10, 5, "//"))  # Output: 2
+print(calculate(10, 0, "//"))  # Output: Division by zero
+print(calculate(10, 5, "%"))  # Output: 0
+print(calculate(10, 0, "%"))  # Output: Division by zero
+print(calculate(10, 5, "**"))  # Output: 100000
