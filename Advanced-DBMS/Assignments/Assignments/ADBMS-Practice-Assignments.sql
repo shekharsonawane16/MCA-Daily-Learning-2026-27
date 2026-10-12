@@ -1,6 +1,3 @@
--- IT13 ADBMS Practice Assignments
--- FY MCA | Division B | Academic Year 2026-27
-
 -- 1. Create a database named CompanyDB
 CREATE DATABASE CompanyDB;
 
@@ -28,10 +25,7 @@ ADD Email VARCHAR(100);
 ALTER TABLE Departments
 ADD dept_location VARCHAR(100);
 
--- 6. Add NOT NULL constraint to the Phone column
--- Note: The assignment refers to a Phone column, but Phone is not
--- included in the original Employees table definition.
--- Add Phone first, then apply the NOT NULL constraint.
+-- 6. Add NOT NULL constraint to the Phone column.
 ALTER TABLE Employees
 ADD Phone VARCHAR(15);
 
