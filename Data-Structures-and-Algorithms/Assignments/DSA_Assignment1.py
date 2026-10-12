@@ -42,35 +42,35 @@ while temp:
 
 # 3.	Insert node at a specific position
 
-# class Node:
-#     def __init__(self, data):
-#         self.data = data
-#         self.next = None
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
-# head = Node(10)
-# head.next = Node(20)
-# head.next.next = Node(30)
+head = Node(10)
+head.next = Node(20)
+head.next.next = Node(30)
 
-# data = int(input("Enter value: "))
-# pos = int(input("Enter position: "))
+data = int(input("Enter value: "))
+pos = int(input("Enter position: "))
 
-# new = Node(data)
+new = Node(data)
 
-# if pos == 1:
-#     new.next = head
-#     head = new
-# else:
-#     temp = head
-#     for i in range(pos - 2):
-#         temp = temp.next
-#     new.next = temp.next
-#     temp.next = new
+if pos == 1:
+    new.next = head
+    head = new
+else:
+    temp = head
+    for i in range(pos - 2):
+        temp = temp.next
+    new.next = temp.next
+    temp.next = new
 
-# temp = head
-# while temp:
-#     print(temp.data, end=" -> ")
-#     temp = temp.next
-# print("None")
+temp = head
+while temp:
+    print(temp.data, end=" -> ")
+    temp = temp.next
+print("None")
 
 
 # 4. Find the Middle Node and Print Its Value in Python
