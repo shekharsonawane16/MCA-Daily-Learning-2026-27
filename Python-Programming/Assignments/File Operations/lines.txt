@@ -1,0 +1,4 @@
+Python is easy.
+Files store data.
+Lists store values.
+Close files after use.
