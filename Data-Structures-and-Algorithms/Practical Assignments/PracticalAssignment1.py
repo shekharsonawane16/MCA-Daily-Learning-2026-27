@@ -1,6 +1,3 @@
-
-# Linked List: All 4 Operations
-
 class Node:
     def __init__(self, data):
         self.data = data
