@@ -1,8 +1,8 @@
 # 1. Read names from a file and store them in a list
-# # with open("student.txt","r") as f:
-# #     names = f.read().splitlines()
+with open("student.txt","r") as f:
+    names = f.read().splitlines()
 
-# # print(names)
+print(names)
 
 
 # 2. Print names longer than 5 characters
