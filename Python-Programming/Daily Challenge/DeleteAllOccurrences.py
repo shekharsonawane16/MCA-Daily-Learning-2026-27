@@ -1,4 +1,4 @@
-def deleteAllOccurrences(arr: List[int], X: int) -> List[int]:
+def deleteAllOccurrences(arr, X):
     result = []
 
     for num in arr:
