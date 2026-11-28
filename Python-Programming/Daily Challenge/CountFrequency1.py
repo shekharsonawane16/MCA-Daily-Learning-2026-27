@@ -1,4 +1,4 @@
-def countFrequency(arr: List[int]) -> List[int]:
+def countFrequency(arr):
     freq = [0] * 101
 
     for i in arr:
